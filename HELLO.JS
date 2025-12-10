@@ -21,17 +21,6 @@ Constraints:
     1 <= s.length <= 1000
 s consist of only digits and English letters.
 
-Seen this question in a real interview before ?
-    1 / 5
-Yes
-No
-Accepted
-4, 351, 754 / 11.8 M
-Acceptance Rate
-36.9 %
-    Topics
-icon
-Companies
 Hint 1
 How can we reuse a previously computed palindrome to compute a larger palindrome ?
     Hint 2
@@ -43,7 +32,6 @@ for every start and end position a substring is a palindrome we have O(n ^ 2) st
 for palindromic checks to O(1) by reusing some previous computation.
 */
 /**
- * Final solution optimized for LeetCode submission
  * @param {string} s
  * @return {string}
  */
@@ -73,4 +61,5 @@ var longestPalindrome = function(s) {
     }
 
     return s.substring(start, start + maxLen);
+
 };
